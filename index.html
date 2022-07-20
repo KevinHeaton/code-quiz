@@ -13,20 +13,22 @@
 
   <title>Code Quiz</title>
 </head>
+
 <body>
-  <div class="main">
+  <div class="main justify-content-center align-items-center">
 
     <header class="top row m-2">
       <div class="col text-left">
-        <a href="#" id="highScoreLink">View Your High Scores!</a>
+        <a href="#" id="highscoreLink">View Your High Scores!</a>
       </div>
       <div id="timer" class="col-3 text-right">
         Time Remaining: <span id="timeRemaining">0</span>
       </div>
+      <div id="timesUp" class="col-3 text-right">Time is up!</div>
     </header>
 
-    <div id="container" class="row">
-      <main>
+    <div id="container" class="row m-2 justify-content-center">
+      <main class="justify-content-center">
         <!-- Start -->
         <div id="startScreen" class="justify-content-center">
           <h1>Timed Coding Quiz</h1>
@@ -35,8 +37,8 @@
         </div>
 
         <!-- Quiz -->
-        <card id="questionCard">
-          <p id="question" class="justify-content-center"></p>
+        <card id="questionCard" class="justify-content-center">
+          <p id="quizQuestion" class="justify-content-center"></p>
           <div id="answerChoices" class="justify-content-center">
             <button id="choice0" class="btn"></button>
             <button id="choice1" class="btn"></button>
@@ -60,11 +62,12 @@
           <h2>High Scores!</h2>
           <div id="highscoreList">
             <!-- Highscores go here -->
+          </div>
+            
 
-            <div>
-              <button type="submit" id="homeScreen">Back to Homescreen</button>
-              <button type="submit" id="clearHighscores">Clear Highscores</button>
-            </div>
+          <div id="highscoreBtns">
+            <button type="submit" id="homeScreen">Back to Homescreen</button>
+            <button type="submit" id="clearHighscores">Clear Highscores</button>
           </div>
         </div>
 
